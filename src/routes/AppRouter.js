@@ -18,15 +18,17 @@ export default () => (
       <div className="left_container">
         <Navbar />
       </div>
-      <div className="right_container">
-        <Switch>
-          <Route path="/" component={Landing} exact={true} />
-          <Route path="/skills" component={Skills} exact={true} />
-          <Route path="/resume" component={Resume} exact={true} />
-          <Route path="/projects" component={Projects} exact={true} />
-          <Route path="/aboutme" component={AboutMe} exact={true} />
-          <Route component={NotFound} />
-        </Switch>
+      <div className="right_scroll">
+        <div className="right_container">
+          <Switch>
+            <Route path="/" component={Landing} exact={true} />
+            <Route path="/skills" component={Skills} exact={true} />
+            <Route path="/resume" component={Resume} exact={true} />
+            <Route path="/projects" component={Projects} exact={true} />
+            <Route path="/aboutme" component={AboutMe} exact={true} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   </div>

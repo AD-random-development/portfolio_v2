@@ -5,9 +5,26 @@
 .left_container {
   width: 30%;
   height: 100vh;
-  background-color: blue;
+  background-color: #192a56;
+  box-shadow: 0 19px 38px rgba(18, 13, 88, 0.3),
+    0 15px 12px rgba(15, 24, 109, 0.22);
+}
+
+.right_scroll {
+  height: 100vh;
+  width: 70%;
+  overflow-y: scroll;
 }
 
 .right_container {
-  float: right;
+  padding: 40px;
+}
+
+.right_item_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
