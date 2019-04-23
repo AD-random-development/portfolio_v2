@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+}
+
+.left_container {
+  width: 30%;
+  height: 100vh;
+  background-color: blue;
+}
+
+.right_container {
+  float: right;
+}
