@@ -30,3 +30,40 @@
   text-decoration: none;
   color: rgb(206, 209, 211);
 }
+
+.fas {
+  margin-right: 10px;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+.social__links {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.fa-facebook-square {
+  text-shadow: 0 0 15px #0097e6;
+}
+
+.fa-linkedin {
+  text-shadow: 0 0 15px #00aced;
+}
+
+.fa-github-square {
+  text-shadow: 0 0 15px #fbc531;
+}
+
+.fa-discord {
+  text-shadow: 0 0 15px #dcdde1;
+}
+
+.nav_links:active {
+  color: white;
+}

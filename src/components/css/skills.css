@@ -64,6 +64,94 @@
   stroke: #83cd29;
 }
 
+.express {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.express + svg .outer {
+  stroke: #3b3b3b;
+}
+
+.mongodb {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.mongodb + svg .outer {
+  stroke: #0e7517;
+}
+
+.mongoose {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.mongoose + svg .outer {
+  stroke: #da532a;
+}
+
+.react {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.react + svg .outer {
+  stroke: #38b4e6;
+}
+
+.webpack {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.webpack + svg .outer {
+  stroke: #3942be;
+}
+
+.mocha {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.mocha + svg .outer {
+  stroke: #94400f;
+}
+
+.github {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.github + svg .outer {
+  stroke: #444444;
+}
+
+.java {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.java + svg .outer {
+  stroke: #b41832;
+}
+
 .chart svg {
   position: absolute;
   top: 0;

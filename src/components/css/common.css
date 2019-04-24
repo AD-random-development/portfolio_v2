@@ -6,8 +6,7 @@
   width: 30%;
   height: 100vh;
   background-color: #192a56;
-  box-shadow: 0 19px 38px rgba(18, 13, 88, 0.3),
-    0 15px 12px rgba(15, 24, 109, 0.22);
+  box-shadow: 0 0 20px #192a56;
 }
 
 .right_scroll {
@@ -21,10 +20,7 @@
 }
 
 .right_item_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: white;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
