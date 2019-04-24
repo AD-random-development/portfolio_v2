@@ -67,3 +67,8 @@
 .nav_links:active {
   color: white;
 }
+
+.is-active {
+  color: white;
+  text-shadow: 0 0 10px rgb(224, 213, 213);
+}

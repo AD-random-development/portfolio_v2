@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import image from '../utils/image.jpg';
 import './css/navbar.css';
@@ -34,35 +34,40 @@ export default () => (
       </Link>
     </div>
 
-    <Link className="nav_links" to="/">
+    <NavLink
+      className="nav_links"
+      to="/"
+      exact={true}
+      activeClassName="is-active"
+    >
       <h2>
         <i class="fas fa-home" />
         Home
       </h2>
-    </Link>
-    <Link className="nav_links" to="/skills">
+    </NavLink>
+    <NavLink className="nav_links" to="/skills" activeClassName="is-active">
       <h2>
         <i class="fas fa-dna" />
         Skills
       </h2>
-    </Link>
-    <Link className="nav_links" to="/resume">
+    </NavLink>
+    <NavLink className="nav_links" to="/resume" activeClassName="is-active">
       <h2>
         <i class="fas fa-file" />
         Resume
       </h2>
-    </Link>
-    <Link className="nav_links" to="/projects">
+    </NavLink>
+    <NavLink className="nav_links" to="/projects" activeClassName="is-active">
       <h2>
         <i class="fas fa-project-diagram" />
         Projects
       </h2>
-    </Link>
-    <Link className="nav_links" to="/aboutme">
+    </NavLink>
+    <NavLink className="nav_links" to="/aboutme" activeClassName="is-active">
       <h2>
         <i class="fas fa-male" />
         About me{' '}
       </h2>
-    </Link>
+    </NavLink>
   </div>
 );
