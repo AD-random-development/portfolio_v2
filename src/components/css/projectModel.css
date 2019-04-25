@@ -1,0 +1,50 @@
+.model_container {
+  position: fixed;
+  background-color: rgb(10, 10, 10);
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 10;
+  width: 70vw;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: translate(-50%, -50%);
+}
+
+.model_close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  margin: -10px -10px 0 0;
+  right: 0;
+  top: 0;
+}
+
+.model_image {
+  width: 45%;
+  height: 85%;
+  margin-right: 30px;
+}
+
+.model_name {
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+
+.model_heading {
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.model_desc {
+  font-weight: 100;
+  font-size: 15px;
+  color: wheat;
+}

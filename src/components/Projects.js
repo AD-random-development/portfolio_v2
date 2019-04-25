@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import ProjectCard from './ProjectCard';
+import ProjectModel from './ProjectModel';
 
 import calculator from '../utils/projects/calculator.png';
 import chatapp from '../utils/projects/chatapp.png';
@@ -13,96 +16,121 @@ import textbox from '../utils/projects/textbox.png';
 
 import './css/projects.css';
 
-export default () => (
-  <div className=" animated slideInRight project_container">
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={expensify} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">EXPENSIFY</p>
-      </div>
-    </div>
+const projectData = [
+  {
+    id: 1,
+    name: 'EXPENSIFY',
+    image: expensify,
+    container: 'project_card_container',
+    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    description:
+      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
+    web_link: 'www.google.com',
+    git_link: 'www.github.com'
+  },
+  {
+    id: 2,
+    name: 'CHAT APP',
+    image: chatapp,
+    container: 'project_card_container_2',
+    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    description:
+      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
+    web_link: 'www.google.com',
+    git_link: 'www.github.com'
+  },
 
-    <div className="project_card_container_2">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={chatapp} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">CHAT APP</p>
-      </div>
-    </div>
+  {
+    id: 3,
+    name: 'CALCULATOR',
+    image: calculator,
+    container: 'project_card_container_2',
+    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    description:
+      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
+    web_link: 'www.google.com',
+    git_link: 'www.github.com'
+  },
+  {
+    id: 4,
+    name: 'DRUM MACHINE',
+    image: drum,
+    container: 'project_card_container',
+    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    description:
+      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
+    web_link: 'www.google.com',
+    git_link: 'www.github.com'
+  }
+];
 
-    <div className="project_card_container_2">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={calculator} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">CALCULATOR</p>
-      </div>
-    </div>
+class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      model: null,
+      showModel: false
+    };
+  }
 
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={drum} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">DRUM MACHINE</p>
-      </div>
-    </div>
+  closeModel = () => {
+    this.setState({
+      model: null,
+      showModel: false
+    });
+  };
 
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={devconnector} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">DEVCONNECTOR</p>
-      </div>
-    </div>
+  showModel = e => {
+    let id = e.target.parentNode.parentNode.id;
+    if (id >= 1)
+      if (!this.state.showModel) {
+        this.setState({
+          model: projectData[id - 1],
+          showModel: true
+        });
+      } else return;
+  };
 
-    <div className="project_card_container_2">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={indesicion} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">INDESICION</p>
-      </div>
-    </div>
+  render() {
+    return (
+      <div>
+        {this.state.showModel ? (
+          <ProjectModel
+            closeModel={this.closeModel}
+            name={this.state.model.name}
+            image={this.state.model.image}
+            tech={this.state.model.tech}
+            description={this.state.model.description}
+            web_link={this.state.model.web_link}
+            git_link={this.state.model.git_link}
+          />
+        ) : null}
+        <div className="animated slideInRight project_container">
+          {/* <div className="project_card_container" onClick={this.showModel}>
+          <div className="project_card_image_container">
+            <img className="project_card_image" src={expensify} />
+          </div>
+          <div className="project_card_name_container">
+            <p className="projtect_card_name">EXPENSIFY</p>
+          </div>
+        </div> */}
 
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={markdown} />
+          {projectData.map(e => {
+            return (
+              <ProjectCard
+                key={e.id}
+                id={e.id}
+                showModel={this.showModel}
+                image={e.image}
+                name={e.name}
+                container={e.container}
+              />
+            );
+          })}
+        </div>
       </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">MARKDOWN </p>
-      </div>
-    </div>
+    );
+  }
+}
 
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={randomquote} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">RANDOM QUOTE</p>
-      </div>
-    </div>
-
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={movieland} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">MOVIE LAND</p>
-      </div>
-    </div>
-
-    <div className="project_card_container">
-      <div className="project_card_image_container">
-        <img className="project_card_image" src={textbox} />
-      </div>
-      <div className="project_card_name_container">
-        <p className="projtect_card_name">TEXT BOX</p>
-      </div>
-    </div>
-  </div>
-);
+export default Projects;
