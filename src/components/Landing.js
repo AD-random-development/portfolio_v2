@@ -18,8 +18,8 @@ export default () => (
           <p>DEENBANDHU CHHOTU RAM UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
         </li>
         <li>
-          <h2>Birth Place</h2>
-          <p>SHAHZADPUR, AMBALA</p>
+          <h2>Email</h2>
+          <p>AVINASHDHILLOR24@GMAIL.COM</p>
         </li>
         <li>
           <h2>Contact No.</h2>

@@ -8,16 +8,13 @@ export default () => (
       <div className="internal_div">
         <p>
           <span className="aboutme_msg">Hello,</span> I'm{' '}
-          <span className="aboutme_name">Avinash Dhillor</span>. Aenean commodo
-          ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-          magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-          nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-          Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis
+          <span className="aboutme_name">Avinash Dhillor</span>. I'm B.TECH 3️rd
+          year student studying in DCRUST University. I am self taught web
+          developer and programmer. I 💖 to explore new technology and
+          converting my ideas into reality. Focused🎯 and stay Disciplined🐱‍👤
+          is my main motto. Reading books📚, articles🧾, listening music🎧 and
+          walking🚶‍♂️ are my hobbies. I'm always ready for new challenges that
+          test my skills and mind. Also, I do daily Pranayama🧘‍♀️ and Exercises🏃‍♂️.
         </p>
       </div>
       <div className="my_name">

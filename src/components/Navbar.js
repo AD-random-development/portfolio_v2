@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import image from '../utils/image.jpg';
 import './css/navbar.css';
@@ -12,26 +12,46 @@ export default () => (
     </div>
 
     <div className="social__icons">
-      <Link className="social__links" to="/">
+      <a
+        className="social__links"
+        href="https://www.facebook.com/avinashdhillor01"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <h2>
           <i class="fab fa-facebook-square" />
         </h2>
-      </Link>
-      <Link className="social__links" to="/">
+      </a>
+      <a
+        className="social__links"
+        href="https://github.com/AvinashDhillor"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <h2>
           <i class="fab fa-github-square" />
         </h2>
-      </Link>
-      <Link className="social__links" to="/">
+      </a>
+      <a
+        className="social__links"
+        href="https://www.linkedin.com/in/avinashdhillor"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <h2>
           <i class="fab fa-linkedin" />
         </h2>
-      </Link>
-      <Link className="social__links" to="/">
+      </a>
+      <a
+        className="social__links"
+        href="https://discord.gg/W8UQdDf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <h2>
           <i class="fab fa-discord" />
         </h2>
-      </Link>
+      </a>
     </div>
 
     <NavLink

@@ -15,7 +15,13 @@ export default ({
     <button className="model_close" onClick={closeModel}>
       &times;
     </button>
-    <img className="model_image" src={image} width="100%" height="100%" />
+    <img
+      className="model_image"
+      src={image}
+      alt={name}
+      width="100%"
+      height="100%"
+    />
     <div className="model_details">
       <h1 className="model_name">{name}</h1>
       <div>
@@ -34,7 +40,7 @@ export default ({
         <div>
           <h3 className="model_heading">Website Link</h3>
           <p className="model_desc">
-            <a href={web_link} target="_blank">
+            <a href={web_link} target="_blank" rel="noopener noreferrer">
               {web_link}
             </a>
           </p>
@@ -45,7 +51,7 @@ export default ({
         <div>
           <h3 className="model_heading">Github Link</h3>
           <p className="model_desc">
-            <a href={git_link} target="_blank">
+            <a href={git_link} target="_blank" rel="noopener noreferrer">
               {git_link}
             </a>
           </p>
