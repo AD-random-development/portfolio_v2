@@ -3,20 +3,36 @@
 }
 
 .left_container {
-  width: 30%;
-  height: 100vh;
+  flex: 1 1 30%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
   background-color: #192a56;
   box-shadow: 0 0 20px #192a56;
 }
 
 .right_scroll {
   height: 100vh;
-  width: 70%;
+  flex: 1 1 70%;
   overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .left_container {
+    display: none;
+  }
+
+  .right_scroll {
+    display: flex;
+    height: inherit;
+    overflow: hidden;
+    justify-content: center;
+  }
 }
 
 .right_container {
   padding: 40px;
+  height: inherit;
 }
 
 .right_item_container {

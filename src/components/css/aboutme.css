@@ -5,12 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 80vh;
+  height: inherit;
 }
 
 .aboutme_text_container {
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;

@@ -3,7 +3,7 @@ import React from 'react';
 import './css/aboutme.css';
 
 export default () => (
-  <div className="animated slideInRight aboutme_container">
+  <div className=" animated slideInRight aboutme_container">
     <div className="aboutme_text_container">
       <div className="internal_div">
         <p>

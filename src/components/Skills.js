@@ -15,7 +15,7 @@ import github from '../utils/icons/github-2.svg';
 import java from '../utils/icons/java.svg';
 
 export default () => (
-  <div className="right_item_container animated slideInRight">
+  <div className="right_item_container animated slideInRight skills_container">
     <figure class="chart" data-percent="75">
       <figcaption>HTML</figcaption>
       <img class="html" src={html} alt="html" />

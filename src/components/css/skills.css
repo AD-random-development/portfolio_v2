@@ -283,3 +283,9 @@
   }
 }
 /* END Keyframes for the initial animation */
+
+.skills_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
