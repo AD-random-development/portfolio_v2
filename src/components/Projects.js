@@ -8,7 +8,7 @@ import chatapp from '../utils/projects/chatapp.png';
 import devconnector from '../utils/projects/devconnector.png';
 import drum from '../utils/projects/drum.png';
 import expensify from '../utils/projects/expensify.png';
-import indesicion from '../utils/projects/indesicion.png';
+import indecision from '../utils/projects/indecision.png';
 import markdown from '../utils/projects/markdown.png';
 import movieland from '../utils/projects/movieland.png';
 import randomquote from '../utils/projects/randomquote.png';
@@ -24,20 +24,20 @@ const projectData = [
     container: 'project_card_container',
     tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
     description:
-      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
-    web_link: 'www.google.com',
-    git_link: 'www.github.com'
+      'An application build during Redux/Redux bootcamp course. It provide an easy platform to store daily expense data along with google Authentication. This application use Firebase to store data of users. It provide feature of sort by date, amount etc.',
+    web_link: 'https://expensify-app-projecy.herokuapp.com',
+    git_link: 'https://github.com/AvinashDhillor/expensify-app'
   },
   {
     id: 2,
     name: 'CHAT APP',
     image: chatapp,
     container: 'project_card_container_2',
-    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    tech: ['Html/Css', 'Socket.io', 'Nodejs', 'Express'],
     description:
-      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
-    web_link: 'www.google.com',
-    git_link: 'www.github.com'
+      'Applicaion build using Socket.io. We can create chatroom and share name with others so they can join chatroom and talk with friends without any signup',
+    web_link: 'https://fast-sea-55980.herokuapp.com',
+    git_link: 'https://github.com/AvinashDhillor/chat-app'
   },
 
   {
@@ -45,22 +45,89 @@ const projectData = [
     name: 'CALCULATOR',
     image: calculator,
     container: 'project_card_container_2',
-    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    tech: ['Html', 'Css', 'BootStrap', 'React'],
     description:
-      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
-    web_link: 'www.google.com',
-    git_link: 'www.github.com'
+      "A simple Calculator application build using react. It is one of the project in FreeCodeCamp's FrontEnd challenges.",
+    git_link: 'https://github.com/AvinashDhillor/calculator'
   },
   {
     id: 4,
     name: 'DRUM MACHINE',
     image: drum,
     container: 'project_card_container',
-    tech: ['React', 'Redux', 'Firebase', 'Google Auth'],
+    tech: ['Html', 'Css', 'BootStrap', 'React'],
     description:
-      'magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet',
-    web_link: 'www.google.com',
-    git_link: 'www.github.com'
+      'Drum machine build in React. we can generate music with help of keyboard keys or simply clicking the buttons.',
+    git_link: 'https://github.com/AvinashDhillor/drum-machine'
+  },
+  {
+    id: 5,
+    name: 'INDECISION',
+    image: indecision,
+    container: 'project_card_container_2',
+    tech: ['Html', 'Css', 'React'],
+    description: 'React Todo Application build duing React/Redux course',
+    web_link: 'https://gentle-shelf-77924.herokuapp.com',
+    git_link: 'https://github.com/AvinashDhillor/Indesicion-app'
+  },
+  {
+    id: 6,
+    name: 'DEV-CONNECTOR',
+    image: devconnector,
+    container: 'project_card_container_3',
+    tech: [
+      'Nodejs',
+      'Mongodb',
+      'Mongoose',
+      'Express',
+      'React',
+      'Redux',
+      'Axios',
+      'JSON web Token'
+    ],
+    description:
+      'DEV-CONNECTOR provide a social platform to build a communication betweem developers. People can share there skills, work background and post messages on there account.',
+    git_link: 'https://github.com/AvinashDhillor/DevConnector'
+  },
+  {
+    id: 7,
+    name: 'MARKDOWN',
+    image: markdown,
+    container: 'project_card_container_3',
+    tech: ['Html', 'Css', 'BootStrap', 'React'],
+    description:
+      'Markdown previewer application build in React. It was part of FreeCodeCamp frontend Challange',
+    git_link: 'https://github.com/AvinashDhillor/markdown-previewer'
+  },
+  {
+    id: 8,
+    name: 'MOVIE LAND',
+    image: movieland,
+    container: 'project_card_container_3',
+    tech: ['Html', 'Css', 'React', 'Omdb API'],
+    description:
+      'Movie land fetch movies data from an API and show movies detail to users based on search query',
+    git_link: 'https://github.com/AvinashDhillor/movie-land'
+  },
+  {
+    id: 9,
+    name: 'RANDOM QUOTES',
+    image: randomquote,
+    container: 'project_card_container_3',
+    tech: ['Html', 'Css', 'React'],
+    description: 'Show random quote to user.',
+    git_link: 'https://github.com/AvinashDhillor/random-quotes'
+  },
+  {
+    id: 10,
+    name: 'TEXTBOX',
+    image: textbox,
+    container: 'project_card_container_3',
+    tech: ['Html', 'Css', 'Javascript'],
+    description:
+      'This application is helpfull when a person want to generate document for multiple users. This application work like creating a template and replace specific fields in document. It also provide save to doc feature',
+    web_link: 'https://avinashdhillor.github.io/TextBox',
+    git_link: 'https://github.com/AvinashDhillor/TextBox'
   }
 ];
 
@@ -106,15 +173,6 @@ class Projects extends Component {
           />
         ) : null}
         <div className="animated slideInRight project_container">
-          {/* <div className="project_card_container" onClick={this.showModel}>
-          <div className="project_card_image_container">
-            <img className="project_card_image" src={expensify} />
-          </div>
-          <div className="project_card_name_container">
-            <p className="projtect_card_name">EXPENSIFY</p>
-          </div>
-        </div> */}
-
           {projectData.map(e => {
             return (
               <ProjectCard

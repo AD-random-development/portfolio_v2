@@ -22,9 +22,17 @@
   border: none;
   font-size: 30px;
   position: absolute;
-  margin: -10px -10px 0 0;
+  margin: -15px -15px 0 0;
   right: 0;
   top: 0;
+}
+
+.model_close:hover {
+  color: rgb(88, 18, 18);
+}
+
+button:focus {
+  outline: none !important;
 }
 
 .model_image {
@@ -47,4 +55,18 @@
   font-weight: 100;
   font-size: 15px;
   color: wheat;
+}
+
+.model_desc a {
+  font-weight: 100;
+  font-size: 15px;
+  color: rgb(53, 240, 240);
+}
+
+.model_desc a:link {
+  text-decoration: none;
+}
+
+.model_desc a:hover {
+  color: rgb(27, 143, 189);
 }

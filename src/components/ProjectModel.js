@@ -25,8 +25,6 @@ export default ({
             <spam>{e} &#10003; </spam>
           ))}
         </p>
-
-        {/* <p className="model_desc">{tech}</p> */}
       </div>
       <div>
         <h3 className="model_heading">Description</h3>
@@ -35,14 +33,22 @@ export default ({
       {web_link ? (
         <div>
           <h3 className="model_heading">Website Link</h3>
-          <p className="model_desc">{web_link}</p>
+          <p className="model_desc">
+            <a href={web_link} target="_blank">
+              {web_link}
+            </a>
+          </p>
         </div>
       ) : null}
 
       {git_link ? (
         <div>
           <h3 className="model_heading">Github Link</h3>
-          <p className="model_desc">{git_link}</p>
+          <p className="model_desc">
+            <a href={git_link} target="_blank">
+              {git_link}
+            </a>
+          </p>
         </div>
       ) : null}
     </div>
